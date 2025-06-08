@@ -1,0 +1,7 @@
+#
+# Author: Nick McCarty nick@inphaseembedded.com
+# SPDX-License-Identifier: Apache-2.0
+#
+
+config BOARD_TEENSY41_AUDIO
+	select SOC_PART_NUMBER_MIMXRT1062DVL6A

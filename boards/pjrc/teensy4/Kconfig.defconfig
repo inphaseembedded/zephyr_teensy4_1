@@ -1,10 +1,10 @@
 #
-# Copyright (c) 2020, Bernhard Kraemer
+# Author: Nick McCarty nick@inphaseembedded.com
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-if BOARD_TEENSY40 || BOARD_TEENSY41 || BOARD_TEENSYMM
+if BOARD_TEENSY40 || BOARD_TEENSY41 || BOARD_TEENSYMM || BOARD_TEENSY41_AUDIO
 
 config BUILD_OUTPUT_HEX
 	bool
@@ -17,7 +17,7 @@ if NETWORKING
 
 config NET_L2_ETHERNET
 	default n if BOARD_TEENSY40
-	default y if BOARD_TEENSY41
+	default y if(BOARD_TEENSY41 || BOARD_TEENSY41_AUDIO)
 
 endif # NETWORKING
 

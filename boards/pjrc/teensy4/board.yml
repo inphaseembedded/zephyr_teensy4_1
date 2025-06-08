@@ -14,3 +14,8 @@ boards:
     vendor: pjrc
     socs:
       - name: mimxrt1062
+  - name: teensy41_audio
+    full_name: Teensy 4.1 w/ Audio Board
+    vendor: pjrc
+    socs:
+      - name: mimxrt1062

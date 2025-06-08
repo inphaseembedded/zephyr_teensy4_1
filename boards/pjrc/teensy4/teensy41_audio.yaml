@@ -1,0 +1,26 @@
+#
+# Author Nick McCarty nick@inphaseembedded.com
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+identifier: teensy41_audio
+name: PJRC TEENSY41 Audio
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+ram: 768
+flash: 8192
+supported:
+  - counter
+  - gpio
+  - sdhc
+  - usb_device
+  - netif:eth
+  - audio:sgtl5000
+testing:
+  ignore_tags:
+    - net
+    - posix

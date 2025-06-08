@@ -1,0 +1,10 @@
+# Author Nick McCarty nick@inphaseembedded.com
+# SPDX-License-Identifier: Apache-2.0
+
+config AUDIO_CODEC_SGTL5000
+	bool "NXP SGTL5000 codec support"
+	default y
+	select I2C
+	depends on DT_HAS_NXP_SGTL5000_ENABLED
+	help
+	  Enable support for the NXP SGTL5000 codec
